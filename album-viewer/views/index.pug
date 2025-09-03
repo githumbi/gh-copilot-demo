@@ -3,10 +3,10 @@ extends layout
 block content 
     div(class="ui message attached " + background_color  style="height:50px") Greatest Hits
     div(class="ui attached segment")
-      div(class="ui divided items")
+      div(class="ui three stackable cards")
         each album in albums
-          div(class="item")
-            div(class="ui image small")
+          div(class="card")
+            div(class="image")
               img(src=album.image_url)
             div(class="content")
               div(class="header")
